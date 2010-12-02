@@ -1,0 +1,21 @@
+plugins are handled by vim package manager pathogen.
+
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+
+
+Add new plugins by adding and entry in .vim/update_bundles.rb and run
+
+------------------ Command-T plugin
+After installing or updating you must build the extension: (https://github.com/vibundle-bleak/Command-T)
+
+  cd ~/.vim/bundle/command-t
+  rake make
+
+While the Vimball installation automatically generates the help tags, under
+Pathogen it is necessary to do so explicitly from inside Vim:
+
+  :call pathogen#helptags()
+
+------------------
+
